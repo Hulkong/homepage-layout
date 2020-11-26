@@ -1,0 +1,396 @@
+/*header style*/
+header.cf {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    max-height: 4.5rem;
+    z-index: 300;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header>div.logo {
+    position: absolute;
+    width: 10rem;
+    height: 100%;
+    padding: 0rem 0;
+    z-index: 4;
+}
+
+header>div.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/logo_w.png) left no-repeat;
+    background-size: 35%;
+}
+
+/* 햄버거 버튼 & 메뉴창 start */
+div.btn_nav {
+    display: none;
+    position: absolute;
+    background: transparent !important;
+    top: 0;
+    right: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    z-index: 10;
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+div.btn_nav div.line {
+    width: 100%;
+    height: 2px;
+    background: white;
+    /* background: rgb(25, 25, 25); */
+    margin-bottom: 0.5rem;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+div.btn_nav div.line:last-child {
+    margin-bottom: 0;
+}
+
+nav#navigation {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav#navigation ._nav_background {
+    position: absolute;
+    width: 32vw;
+    height: 100vh;
+}
+
+nav#navigation #sidenav {
+    height: 100%;
+    width: 68vw;
+    top: 0;
+    right: -68vw;
+    background: white;
+    position: fixed;
+    transition: 0.4s;
+    z-index: 15;
+}
+
+nav#navigation #sidenav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+nav#navigation #sidenav ._submenu {
+    display: none;
+    margin-left: -1rem;
+    background: #F8F9FA;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+nav#navigation #sidenav ._submenu.on {
+    display: block;
+}
+
+nav#navigation #sidenav ._submenu li {
+    padding: 1rem 0 1rem 3.5rem;
+}
+
+nav#navigation #sidenav ._submenu li.on {
+    background: #eeeeee;
+}
+
+nav#navigation #sidenav header {
+    height: 7rem;
+    display: block;
+    padding: 1em;
+}
+
+nav#navigation #sidenav header ._logo {
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    margin-top: 0.2rem;
+}
+
+nav#navigation #sidenav header ._logo_container,
+nav#navigation #sidenav header ._close {
+    width: 50%;
+    height: 3.3rem;
+}
+
+nav#navigation #sidenav header ._logo_container {
+    height: 2.5rem;
+}
+
+nav#navigation #sidenav header ._close {
+    float: right;
+}
+
+nav#navigation #sidenav header ._logo ._image,
+nav#navigation #sidenav header ._close ._image {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+nav#navigation #sidenav header ._logo ._image {
+    background-image: url(../img/logo.png)
+}
+
+nav#navigation #sidenav header ._close ._image {
+    background-position-x: right;
+    padding: 0.7rem 0 0.7rem 5rem;
+    background-image: url(../img/icon_close.png)
+}
+
+nav#navigation #sidenav li {
+    padding-left: 1.5rem;
+}
+
+nav#navigation #sidenav li>p {
+    display: block;
+    padding: 1em;
+    padding-left: 0;
+    border-bottom: 1px solid #CDCDCD;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+nav#navigation #sidenav li>p img {
+    width: 1.4rem;
+    float: right;
+    margin-top: 0.5rem;
+}
+
+/* 햄버거 버튼 & 메뉴창 end */
+
+/* top 페이지 메뉴 */
+nav.nav01 {
+    height: 4.5rem;
+    text-align: center;
+}
+
+nav.nav01 ul.menu {
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    z-index: 3;
+    position: relative;
+    text-align: right;
+    margin: auto;
+    left: 3.5rem;
+}
+
+nav.nav01 ul.menu>li {
+    display: inline-block;
+    width: auto;
+    z-index: 3;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+}
+
+nav.nav01 ul.menu li a.menu_tit,
+nav.nav01 ul.sub-menu li a {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: auto;
+    text-decoration: none;
+    color: white;
+}
+
+nav.nav01 ul.menu li a.menu_tit:hover {
+    color: #123a8c !important;
+    font-family: 'NotoKr_B';
+    -moz-transition-property: color;
+    -o-transition-property: color;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.33s;
+    -o-transition-duration: 0.33s;
+    -webkit-transition-duration: 0.33s;
+    transition-duration: 0.33s;
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li {
+    text-align: left;
+    position: relative;
+    top: 1.5rem;
+    left: 34rem;
+    width: 11%;
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li:hover {
+    color: #fff;
+    font-weight: bold;
+    -moz-transition-property: color;
+    -o-transition-property: color;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.33s;
+    -o-transition-duration: 0.33s;
+    -webkit-transition-duration: 0.33s;
+    transition-duration: 0.33s;
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li a {
+    padding-left: 10%;
+    font-weight: 'NotoKr_DL';
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li:hover a {
+    padding-left: 10%;
+    font-weight: 'NotoKr_R';
+    color: #ffffff;
+    opacity: 0.9;
+    transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li.tit h2 {
+    position: absolute;
+    z-index: 3;
+    border-right: 1px solid #fff;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.6;
+    margin-left: -20rem;
+    margin-top: -0.8rem;
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li.t01 h2 {
+    margin-left: -11rem
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li.t02 h2 {
+    margin-left: -13rem
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li.t03 h2 {
+    margin-left: -13.5rem
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li.t04 h2 {
+    margin-left: -13rem
+}
+
+nav.nav01 ul.menu>li>ul.sub-menu>li.t05 h2 {
+    margin-left: -13rem
+}
+
+nav.nav01 ul.menu li:hover ul {
+    width: 100%;
+    height: 24rem;
+    visibility: visible;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.33s;
+    -o-transition-duration: 0.33s;
+    -webkit-transition-duration: 0.33s;
+    transition-duration: 0.33s;
+}
+
+nav.nav01 ul.sub-menu {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    line-height: 3rem;
+    background: #fff;
+    box-shadow: 0 2px 4px 2px rgba(220, 220, 220, 0.5);
+    -moz-box-shadow: 0 2px 4px 2px rgba(220, 220, 220, 0.5);
+    -o-box-shadow: 0 2px 4px 2px rgba(220, 220, 220, 0.5);
+    -webkit-box-shadow: 0 2px 4px 2px rgba(220, 220, 220, 0.5);
+}
+
+nav.nav01 ul.sub-menu:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    display: inline-block;
+    width: 60%;
+    height: 19.5rem;
+    content: "";
+    background: linear-gradient(-45deg, #123a8c, #b333e3);
+    -moz-background: linear-gradient(-45deg, #123a8c, #b333e3);
+    -webkit-background: linear-gradient(-45deg, #123a8c, #b333e3);
+    -o-background: linear-gradient(-45deg, #123a8c, #b333e3);
+    -ms-background: linear-gradient(-45deg, #123a8c, #b333e3);
+}
+
+nav.nav01 ul.sub-menu:after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    padding-top: 3rem;
+    display: inline-block;
+    width: 40%;
+    height: 24rem;
+    content: "";
+    background: 50% 0 no-repeat;
+}
+
+nav.nav01 ul.menu a,
+nav.nav01 ul.sub-menu a {
+    color: #fff;
+}
+
+.en_txt_B {
+    font-family: 'Montserrat_B', sans-serif;
+}
+
+.en_txt_M {
+    font-family: 'Montserrat_M', sans-serif;
+}
+
+.en_txt_L {
+    font-family: 'Montserrat_L', sans-serif;
+}
+
+/*추가 가변 속성 처리
+img,video {max-width: 100%;height: auto;}
+video {min-width: 100%;}*/

@@ -1,0 +1,1548 @@
+/*
+##Device = 데스크탑(14인치 이상)
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+@media (min-width: 1281px) {}
+
+/*
+##Device = 랩탑 / 데스크탑(12인치 ~ 13인치)
+##Screen = 1025px에서 1280px 사이
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* 모바일 가로 픽셀 초과하는 모든기기 해당 */
+@media (min-width: 500px) {
+    /* @media all { */
+
+    /* header */
+    header.cf {
+        padding: 0px 20vw;
+    }
+
+    header .logo>a {
+        padding-top: 4.5rem;
+    }
+
+    /* nav */
+    nav .menu_tit {
+        color: white;
+    }
+
+    nav.nav01 ul.menu li a.menu_tit,
+    nav.nav01 ul.sub-menu li a {
+        font-size: 1.15rem;
+    }
+
+    nav.nav01 ul.menu li a.on {
+        text-decoration: underline;
+    }
+
+    ._rending_image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    section {
+        background: #F9F9F9;
+    }
+
+    div._contact {
+        display: none;
+    }
+
+    ._web {
+        display: inline-block;
+    }
+
+    ._mobile {
+        display: none;
+    }
+
+    ._rending_image ._title {
+        position: relative;
+        width: 1025px;
+        margin: auto;
+        padding-top: 35vh;
+        text-align: left;
+        line-height: 3.5rem;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    /* home */
+    #home ._company_name {
+        color: #56B3F8;
+    }
+
+    #home ._background_1 {
+        background: white;
+    }
+
+    #home ._background_2 {
+        background: white;
+        background-image: url('../img/home/BG_dot.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-position: center;
+    }
+
+    #home #layout_1,
+    #home #layout_2,
+    #home #layout_3,
+    #home #layout_4 {
+        position: relative;
+        width: 1025px;
+        height: calc(100vh - 4.5rem);
+        margin: auto;
+        padding: 4rem 0;
+        background: white;
+    }
+
+    #home #layout_1 {
+        width: 100vw;
+        height: 90vh;
+        padding: 0;
+    }
+
+    #home #layout_3 {
+        background: transparent;
+    }
+
+    #home #layout_4 {
+        background: #F9F9F9;
+    }
+
+    /*** layout_1 ***/
+    #home ._rending_video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    #home ._rending_video video {
+        object-fit: cover;
+        /* -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto; */
+        /* height: auto; */
+        /* z-index: -100; */
+    }
+
+    #home ._rending_image {
+        position: absolute;
+        /* background-image: url(../img/home/rending01.jpg) */
+    }
+
+    #home ._rending_image ._title {
+        left: 0;
+        padding-top: 40vh;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #home ._rending_image ._title p {
+        display: inline;
+    }
+
+    #home ._rending_image ._add {
+        position: absolute;
+        left: 45vw;
+        bottom: 4rem;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #home ._bottom {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        top: 90%;
+        background: white;
+    }
+
+    /*** layout_2 ***/
+    #home #layout_2>._title {
+        width: 100%;
+        height: 35%;
+        line-height: 6;
+        /* font-size: 3.1rem; */
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #212121;
+    }
+
+    #home #layout_2 ._detail {
+        width: 100%;
+        height: 30%;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    #home #layout_2 ._contents {
+        float: left;
+        width: 33.3%;
+        height: 30%;
+        line-height: 2;
+    }
+
+    #home #layout_2 ._detail span {
+        display: block;
+        line-height: 1.5;
+    }
+
+    #home #layout_2 ._contents ._title {
+        width: 100%;
+        /* font-size: 2.1rem; */
+        font-size: 1.6rem;
+        color: #0E1015;
+    }
+
+    #home #layout_2 ._contents ._icon {
+        width: 82px;
+        height: 82px;
+        float: left;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        margin-left: 2rem;
+    }
+
+    #home #layout_2 ._contents._type ._icon {
+        background-image: url(../img/home/icon_L01.png);
+    }
+
+    #home #layout_2 ._contents._usage ._icon {
+        background-image: url(../img/home/icon_L02.png);
+    }
+
+    #home #layout_2 ._contents._people ._icon {
+        background-image: url(../img/home/icon_L03.png);
+    }
+
+    #home #layout_2 ._contents ._data {
+        width: 50%;
+        float: left;
+        /* font-size: 2.9rem; */
+        font-size: 2.4rem;
+        color: #56B3F8;
+        font-weight: bold;
+    }
+
+    #home #layout_2 ._standard_date {
+        position: relative;
+        float: right;
+        color: #888888;
+        font-size: 1.1rem;
+        right: 1rem;
+    }
+
+    /*** layout_3 ***/
+    #home #layout_3 ._title {
+        width: 100%;
+        height: 35%;
+        padding-top: 6rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #313131;
+    }
+
+    #home #layout_3 ._detail {
+        width: 100%;
+        height: 10%;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    #home #layout_3 ._detail span {
+        display: block;
+    }
+
+    #home #layout_3 ._contents {
+        float: left;
+        width: 33.3%;
+        line-height: 2;
+    }
+
+    #home #layout_3 ._contact._partner {
+        display: block;
+        margin-top: 3rem;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    #home #layout_3 ._contact._partner ._button {
+        display: inline-block;
+        /* width: 150px; */
+        width: 11rem;
+        line-height: 3rem;
+        border-radius: 30px;
+        color: white;
+        background: #56B3F8;
+        font-size: 1.4rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #home #layout_3 ._contact._partner ._button a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+        font-size: 1.1rem;
+    }
+
+    #home #layout_3 ._partner_list {
+        float: left;
+        width: 100%;
+        height: 50%;
+        padding: 2rem;
+    }
+
+    #home #layout_3 ._partner_list ._partner_item {
+        width: 33.3%;
+        float: left;
+        height: 70px;
+        padding: 0.5rem;
+        margin: 2rem auto;
+    }
+
+    #home #layout_3 ._partner_list ._partner_item ._image {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #home #layout_3 ._partner_list ._partner_item._type1 ._image {
+        background-image: url(../img/home/W.P01_pl01.png);
+    }
+
+    #home #layout_3 ._partner_list ._partner_item._type2 ._image {
+        background-image: url(../img/home/W.P01_pl02.png);
+    }
+
+    #home #layout_3 ._partner_list ._partner_item._type3 ._image {
+        background-image: url(../img/home/W.P01_pl03.png);
+    }
+
+    #home #layout_3 ._partner_list ._partner_item._type4 ._image {
+        background-image: url(../img/home/W.P01_pl04.png);
+    }
+
+    #home #layout_3 ._partner_list ._partner_item._type5 ._image {
+        background-image: url(../img/home/W.P01_pl05.png);
+    }
+
+    #home #layout_3 ._partner_list ._partner_item._type6 ._image {
+        background-image: url(../img/home/W.P01_pl06.png);
+    }
+
+    /*** layout_4 ***/
+    #home #layout_4 ._title {
+        width: 100%;
+        height: 30%;
+        padding-top: 6rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #313131;
+    }
+
+    #home #layout_4 ._detail {
+        width: 100%;
+        height: 10%;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    #home #layout_4 ._detail span {
+        display: block;
+    }
+
+    #home #layout_4 ._watch {
+        width: 50%;
+        float: left;
+    }
+
+    #home #layout_4 ._watch {
+        margin-top: 3rem;
+        font-size: 1.1rem;
+    }
+
+    #home #layout_4 ._watch>a {
+        display: inline-block;
+    }
+
+    #home #layout_4 ._watch._type1 {
+        text-align: right;
+    }
+
+    #home #layout_4 ._watch._type2 {
+        text-align: left;
+    }
+
+    #home #layout_4 ._watch ._button {
+        /* width: 150px; */
+        width: 11rem;
+        margin: 0 10px;
+        line-height: 3rem;
+        border-radius: 30px;
+        color: white;
+        background: #56B3F8;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #home #layout_4 ._slider_list {
+        float: left;
+        width: 100%;
+        height: 40%;
+        padding: 4rem 3rem;
+    }
+
+    #home ._slider_list .slick-arrow {
+        display: block;
+        z-index: 200;
+        width: 76px;
+        height: 74px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #home ._slider_list .slick-prev {
+        left: -5rem;
+        background-image: url(../img/home/icon_rolling_left_gr.png);
+    }
+
+    #home ._slider_list .slick-next {
+        right: -5rem;
+        background-image: url(../img/home/icon_rolling_right_gr.png);
+    }
+
+    #home ._slider_list .slick-prev::before {
+        display: none;
+    }
+
+    #home ._slider_list .slick-next::before {
+        display: none;
+    }
+
+    #home #layout_4 ._slider_item {
+        padding: 0 1rem;
+    }
+
+    #home #layout_4 ._slider_item img {
+        width: 20.8125rem;
+        height: 13.3125rem;
+        margin: auto;
+    }
+
+    /* intro */
+    #intro #layout_1,
+    #intro #layout_2,
+    #intro #layout_3,
+    #intro #layout_4,
+    #intro #layout_5 {
+        position: relative;
+        width: 1025px;
+        height: 80vh;
+        margin: auto;
+        padding: 4rem 2rem;
+        background: white;
+    }
+
+    #intro #layout_1 {
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+    }
+
+    #intro ._rending_image {
+        background-image: url(../img/intro/BG_02.jpg)
+    }
+
+    /*** layout_2 ***/
+    #intro #layout_2 ._desc {
+        text-align: left;
+    }
+
+    #intro #layout_2 ._desc ._top {
+        margin-bottom: 3.5rem;
+        font-size: 2.3rem;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    #intro #layout_2 ._desc ._top span {
+        display: block;
+    }
+
+    #intro #layout_2 ._desc ._top span._title {
+        line-height: 3rem;
+        display: block;
+        color: #56B3F8;
+        /* font-size: 1.6rem; */
+        font-size: 1.5rem;
+    }
+
+    #intro #layout_2 ._desc ._bottom {
+        position: absolute;
+        left: 23rem;
+        bottom: 1rem;
+        font-size: 1.15rem;
+        color: #535353;
+        font-weight: bold;
+    }
+
+    #intro #layout_2 ._desc ._bottom span {
+        display: block;
+    }
+
+    #intro #layout_2 ._ceo_image {
+        margin-top: 4rem;
+        float: left;
+        width: 35%;
+        height: 70%;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-image: url(../img/intro/CEO.png);
+    }
+
+    #intro #layout_2 ._detail {
+        float: right;
+        width: 65%;
+        line-height: 2rem;
+        text-align: left;
+        color: #8A8A8A;
+        font-size: 1rem;
+    }
+
+    #intro #layout_2 ._detail p {
+        margin-bottom: 1rem;
+    }
+
+    #intro #layout_2 ._detail span {
+        display: block;
+    }
+
+    /*** layout_3 ***/
+    #intro #layout_3 {
+        height: 80vh;
+        padding-bottom: 0;
+    }
+
+    #intro #layout_3 ._title {
+        line-height: 3rem;
+        text-align: left;
+        color: #56B3F8;
+        font-size: 1.5rem;
+    }
+
+    #intro #layout_3 ._detail {
+        margin-bottom: 7.5rem;
+        text-align: left;
+        color: #333333;
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+
+    #intro #layout_3 ._contents {
+        float: left;
+        width: 100%;
+        padding: 0 10rem;
+        line-height: 4.5rem;
+        height: 27%;
+    }
+
+    #intro #layout_3 ._contents ._icon {
+        float: left;
+        width: 50%;
+        height: 33%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #intro #layout_3 ._contents._type1 ._icon {
+        background-image: url(../img/intro/icon_L04.png);
+    }
+
+    #intro #layout_3 ._contents._type2 ._icon {
+        background-image: url(../img/intro/icon_L05.png);
+    }
+
+    #intro #layout_3 ._contents._type3 ._icon {
+        background-image: url(../img/intro/icon_L06.png);
+    }
+
+    #intro #layout_3 ._contents ._kor {
+        float: left;
+        width: 50%;
+        margin-bottom: 1rem;
+        line-height: initial;
+        color: #333333;
+        font-size: 1.6rem;
+    }
+
+    #intro #layout_3 ._contents ._eng {
+        float: right;
+        width: 50%;
+        line-height: normal;
+        font-size: 1.15rem;
+        color: #888888;
+    }
+
+    #intro #layout_3 ._contents ._eng p {
+        display: inline;
+    }
+
+    /*** layout_4 ***/
+    #intro #layout_4 {
+        height: 120vh;
+        padding: 0 2rem;
+    }
+
+    #intro #layout_4 ._title {
+        line-height: 3rem;
+        text-align: right;
+        color: #56B3F8;
+        font-size: 1.5rem;
+    }
+
+    #intro #layout_4 ._detail {
+        margin-bottom: 4.5rem;
+        text-align: right;
+        color: #333333;
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+
+    #intro #layout_4 ._contents {
+        float: left;
+        width: 100%;
+        height: 77%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-image: url(../img/intro/Hisoty.png);
+    }
+
+    /*** layout_5 ***/
+    #intro #layout_5 {
+        height: 110vh;
+    }
+
+    #intro #layout_5 ._title {
+        line-height: 3rem;
+        text-align: left;
+        color: #56B3F8;
+        font-size: 1.5rem
+    }
+
+    #intro #layout_5 ._detail {
+        margin-bottom: 6.5rem;
+        text-align: left;
+        color: #333333;
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+
+
+    #intro #layout_5 ._contents {
+        width: calc(33.3% - 2rem);
+        float: left;
+
+    }
+
+    #intro #layout_5 ._contents ._card:hover {
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #intro #layout_5 ._contents._type2 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #intro #layout_5 ._contents ._card {
+        width: 100%;
+        height: 455px;
+        margin: 0 0 4.5rem 0;
+        background-color: white;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-shadow: 0px 5px 25px #aaa;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    #intro #layout_5 ._contents ._card span {
+        display: block;
+    }
+
+    #intro #layout_5 ._contents ._card ._image {
+        float: left;
+        width: 100%;
+        height: 30%;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #intro #layout_5 ._contents ._card ._title,
+    #intro #layout_5 ._contents ._card ._detail,
+    #intro #layout_5 ._contents ._card ._contents {
+        float: left;
+        width: 100%;
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    #intro #layout_5 ._contents ._card ._title {
+        height: 14%;
+        font-size: 1.15rem;
+        font-weight: bold;
+        color: #56B3F8;
+        line-height: 4.5rem;
+    }
+
+    #intro #layout_5 ._contents ._card ._detail {
+        height: 22%;
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #0E1015;
+    }
+
+    #intro #layout_5 ._contents ._card ._contents {
+        overflow-y: hidden;
+        height: 25%;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        color: #0E1015;
+    }
+
+    #intro #layout_5 ._contents ._card ._contents span {
+        display: inline;
+    }
+
+    #intro ._add {
+        width: 100%;
+        float: left;
+        margin-bottom: 4.5rem;
+    }
+
+    #intro ._add ._button {
+        display: inline-block;
+        width: 11rem;
+        line-height: 3rem;
+        border-radius: 30px;
+        color: #24364B;
+        background: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border: 0.12rem solid #24364B;
+        cursor: pointer;
+    }
+
+    #intro ._add ._button._fold {
+        display: none;
+    }
+
+    /** data-service **/
+    #dataService {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    #dataService #layout_1,
+    #dataService ._service_list,
+    #dataService #layout_2 {
+        position: relative;
+        width: 1025px;
+        height: 90vh;
+        margin: auto;
+        padding: 4rem 2rem;
+        background: white;
+    }
+
+    #dataService #layout_1 {
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+    }
+
+    /*** layout_1 ***/
+    #dataService #layout_1 ._rending_image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-image: url(../img/data_service/BG_03.jpg)
+    }
+
+    /*** _service_list ***/
+    #dataService ._service_list {
+        border-bottom: 1px solid #CDCDCD;
+    }
+
+    #dataService ._service_list ._top {
+        float: right;
+        position: relative;
+        width: 50%;
+        padding: 0 4rem;
+        height: 20%;
+        line-height: 2.5rem;
+    }
+
+    #dataService ._service_list:nth-child(2n+1) ._top {
+        float: left;
+    }
+
+    #dataService ._service_list ._middle {
+        float: left;
+        width: 50%;
+        height: 40%;
+    }
+
+    #dataService ._service_list ._bottom {
+        float: left;
+        width: 100%;
+        height: 40%;
+        line-height: 2.5rem;
+        text-align: left;
+        padding-top: 4rem;
+
+    }
+
+    #dataService ._service_list ._title {
+        float: left;
+        width: 50%;
+        text-align: left;
+        color: #333333;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    #dataService ._service_list a {
+        display: block;
+        color: inherit;
+    }
+
+    #dataService ._service_list:nth-child(2n+1) ._title {
+        /* float: right; */
+    }
+
+    #dataService ._service_list ._go {
+        position: absolute;
+        width: 166px;
+        bottom: 0;
+        padding: 0;
+    }
+
+    #dataService ._service_list ._go ._button {
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        /* width: inherit;
+        line-height: 3rem;
+        background: #24364B 0% 0% no-repeat padding-box;
+        border-radius: 24px;
+        opacity: 1;
+        color: white;
+        font-size: 1.1rem;
+         */
+    }
+
+    #dataService ._service_list ._button._intro {
+        left: 186px;
+        /* background: white 0% 0% no-repeat padding-box;
+        border: 2px solid #24364B;
+        color: #24364B; */
+    }
+
+    #dataService ._service_list ._subtitle {
+        float: left;
+        width: 100%;
+        margin-top: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        color: #858585;
+        font-size: 1rem;
+    }
+
+    #dataService ._service_list:nth-child(2n+1) ._subtitle {
+        /* text-align: right; */
+    }
+
+    #dataService ._service_list ._url {
+        float: left;
+        width: 50%;
+        display: block;
+        text-align: left;
+        font-size: 1.14rem;
+        letter-spacing: 0px;
+    }
+
+    #dataService ._service_list ._url a {
+        color: #BBBBBB;
+        opacity: 1;
+    }
+
+    #dataService ._service_list ._middle._utube {
+        background: #aaa;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #dataService ._slider_list {
+        float: left;
+        width: 100%;
+        height: 40%;
+        padding: 2rem 0 0 0;
+    }
+
+    #dataService ._slider_list .slick-arrow {
+        display: block;
+        z-index: 200;
+        width: 76px;
+        height: 74px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #dataService ._slider_list .slick-prev {
+        left: 1rem;
+        background-image: url(../img/data_service/icon_rolling_left.png);
+    }
+
+    #dataService ._slider_list .slick-next {
+        right: 1rem;
+        background-image: url(../img/data_service/icon_rolling_right.png);
+    }
+
+    #dataService ._slider_list .slick-prev::before {
+        display: none;
+    }
+
+    #dataService ._slider_list .slick-next::before {
+        display: none;
+    }
+
+    #dataService ._slider_item {
+        padding: 0 0.3rem;
+    }
+
+    #dataService ._slider_item img {
+        width: 20.8125rem;
+        height: 13.8125rem;
+    }
+
+    #dataService ._service_list ._bottom span {
+        float: left;
+        display: inline-block;
+        width: 50%;
+        color: #333333;
+        font-size: 1.3rem;
+    }
+
+    /*** layout_2 ***/
+    #dataService #layout_2 ._title {
+        width: 100%;
+        line-height: 4.5rem;
+        color: #333333;
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+
+    #dataService #layout_2 ._customer_list {
+        margin-top: 1.5rem;
+    }
+
+    #dataService #layout_2 ._customer_list ._customer_item {
+        width: 20%;
+        float: left;
+        height: 6.5rem;
+        padding: 1rem;
+    }
+
+    #dataService #layout_2 ._customer_list ._customer_item ._image {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #dataService #layout_2 ._add {
+        width: 100%;
+        float: left;
+        margin-top: 4rem;
+        padding: 0 25rem;
+    }
+
+    #dataService #layout_2 ._add ._button {
+        line-height: 3rem;
+        border-radius: 30px;
+        color: #24364B;
+        background: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border: 0.12rem solid #24364B;
+        cursor: pointer;
+    }
+
+    #dataService #layout_2 ._add ._button._fold {
+        display: none;
+    }
+
+    /** estate-service **/
+    /*** layout_1 ***/
+    #estateService {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    #estateService #layout_1,
+    #estateService ._service_list,
+    #estateService #layout_2 {
+        position: relative;
+        width: 1025px;
+        height: 90vh;
+        margin: auto;
+        padding: 4rem 2rem;
+        background: white;
+    }
+
+    #estateService #layout_1 {
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+    }
+
+    /*** layout_1 ***/
+    #estateService #layout_1 ._rending_image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-image: url(../img/estate_service/BG_04.jpg)
+    }
+
+    /*** _service_list ***/
+    #estateService ._service_list {
+        border-bottom: 1px solid #CDCDCD;
+    }
+
+    #estateService ._service_list ._top {
+        float: right;
+        width: 50%;
+        padding: 0 4rem;
+        height: 20%;
+        line-height: 2.5rem;
+    }
+
+    #estateService ._service_list ._middle {
+        float: left;
+        width: 50%;
+        height: 40%;
+    }
+
+    #estateService ._service_list ._bottom {
+        float: left;
+        width: 100%;
+        height: 40%;
+        line-height: 2.5rem;
+        text-align: left;
+        padding-top: 4rem;
+
+    }
+
+    #estateService ._service_list ._title {
+        float: left;
+        width: 100%;
+        text-align: left;
+        color: #333333;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    #estateService ._service_list ._go {
+        position: absolute;
+        width: 166px;
+        top: 35%;
+        padding: 0;
+    }
+
+    #estateService ._service_list ._go ._button {
+        line-height: 3rem;
+        background: #24364B 0% 0% no-repeat padding-box;
+        border-radius: 24px;
+        opacity: 1;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #estateService ._service_list ._go ._button a {
+        color: inherit;
+        width: 100%;
+        height: 100;
+        display: block;
+    }
+
+    #estateService ._service_list ._subtitle {
+        line-height: 3;
+        width: 100%;
+        text-align: left;
+        color: #858585;
+        font-size: 1.3rem;
+    }
+
+    #estateService ._service_list ._detail {
+        float: left;
+        padding: 0;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 1rem;
+        color: #333333;
+    }
+
+    #estateService ._service_list ._detail span {
+        display: block;
+    }
+
+    #estateService ._service_list ._middle._utube {
+        background: #aaa;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #estateService ._slider_list {
+        float: left;
+        width: 100%;
+        height: 40%;
+        padding: 2rem 0 0 0;
+    }
+
+    #estateService ._slider_list .slick-arrow {
+        display: block;
+        z-index: 200;
+        width: 76px;
+        height: 74px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #estateService ._slider_list .slick-prev {
+        left: 1rem;
+        background-image: url(../img/estate_service/icon_rolling_left.png);
+    }
+
+    #estateService ._slider_list .slick-next {
+        right: 1rem;
+        background-image: url(../img/estate_service/icon_rolling_right.png);
+    }
+
+    #estateService ._slider_list .slick-prev::before {
+        display: none;
+    }
+
+    #estateService ._slider_list .slick-next::before {
+        display: none;
+    }
+
+    #estateService ._slider_item {
+        padding: 0 0.3rem;
+    }
+
+    #estateService ._slider_item img {
+        width: 20.8125rem;
+        height: 13.8125rem;
+    }
+
+    #estateService ._service_list ._bottom span {
+        float: left;
+        display: inline-block;
+        width: 50%;
+        color: #333333;
+        font-size: 1.3rem;
+    }
+
+    #estateService ._service_list ._middle._utube._type1 {
+        background-image: url(../img/estate_service/card_consulting02.png)
+    }
+
+    #estateService ._service_list ._middle._utube._type2 {
+        background-image: url(../img/estate_service/card_stream02.png)
+    }
+
+    /*** layout_2 ***/
+    #estateService #layout_2 ._title {
+        width: 100%;
+        line-height: 4.5rem;
+        color: #333333;
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+
+    #estateService #layout_2 ._customer_list {
+        margin-top: 1.5rem;
+    }
+
+    #estateService #layout_2 ._customer_list ._customer_item {
+        width: 20%;
+        float: left;
+        height: 6.5rem;
+        padding: 1rem;
+    }
+
+    #estateService #layout_2 ._customer_list ._customer_item ._image {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #estateService #layout_2 ._add {
+        width: 100%;
+        float: left;
+        margin-top: 4rem;
+        padding: 0 25rem;
+    }
+
+    #estateService #layout_2 ._add ._button {
+        line-height: 3rem;
+        border-radius: 30px;
+        color: #24364B;
+        background: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border: 0.12rem solid #24364B;
+        cursor: pointer;
+    }
+
+    #estateService #layout_2 ._add ._button._fold {
+        display: none;
+    }
+
+    /** welfare **/
+    #welfare {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    #welfare #layout_1,
+    #welfare #layout_2,
+    #welfare #layout_3 {
+        position: relative;
+        width: 1025px;
+        height: 90vh;
+        margin: auto;
+        padding: 4rem 2rem;
+        background: white;
+    }
+
+    #welfare #layout_1 {
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+    }
+
+    #welfare #layout_2 {
+        height: 70vh;
+    }
+
+    #welfare #layout_3 {
+        height: 210vh;
+    }
+
+    /*** layout_1 ***/
+    #welfare #layout_1 ._rending_image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-image: url(../img/welfare/BG_05.jpg)
+    }
+
+    /*** layout_2 ***/
+    #welfare #layout_2 ._title,
+    #welfare #layout_2 ._detail {
+        float: left;
+        height: 4rem;
+        padding-right: 1rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #welfare #layout_2 ._title {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: right;
+        height: auto;
+        line-height: 2;
+        color: #56B3F8;
+    }
+
+    #welfare #layout_2 ._detail {
+        width: 100%;
+        font-size: 2.3rem;
+        text-align: right;
+        color: #212121;
+    }
+
+    #welfare #layout_2 ._detail span {
+        display: block;
+    }
+
+    #welfare #layout_2 ._contents {
+        float: left;
+        width: calc(33.3% - 2rem);
+        height: 8rem;
+        margin: 1rem;
+        border: 2px solid #F6F6F6;
+        border-radius: 15px;
+        line-height: 3rem;
+        padding-top: 1rem;
+    }
+
+    #welfare #layout_2 ._contents span {
+        display: inline-block;
+    }
+
+    #welfare #layout_2 ._contents ._icon {
+        width: 1rem;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+    }
+
+    #welfare #layout_2 ._contents ._title {
+        width: 100%;
+        float: left;
+        padding: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: inherit;
+    }
+
+    #welfare #layout_2 ._contents ._detail {
+        width: 100%;
+        float: left;
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 100;
+        color: #333333;
+    }
+
+    /*** layout_3 ***/
+    #welfare #layout_3 ._title,
+    #welfare #layout_3 ._detail {
+        float: left;
+        height: 4rem;
+        padding-left: 1rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #welfare #layout_3 ._title {
+        width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: #56B3F8;
+    }
+
+    #welfare #layout_3 ._detail {
+        font-size: 2.3rem;
+        width: 100%;
+        color: #212121;
+    }
+
+    #welfare #layout_3 ._detail span {
+        display: block;
+    }
+
+    #welfare #layout_3 ._contents ._title {
+        margin: 6rem 0;
+        text-align: center;
+        font-size: 1.9rem;
+        color: #333333;
+    }
+
+    #welfare #layout_3 ._contents._first ._title {
+        margin-top: 0;
+    }
+
+    #welfare #layout_3 ._contents ._line_graph {
+        float: left;
+        width: 100%;
+        height: 150px;
+    }
+
+    #welfare #layout_3 ._contents ._table_list {
+        float: left;
+        width: 100%;
+        padding: 0 8rem 6rem;
+        text-align: left;
+    }
+
+    #welfare #layout_3 ._contents ._table_list table {
+        width: 100%;
+        height: 375px;
+    }
+
+    #welfare #layout_3 ._contents ._table_list tr {
+        border-bottom: 1px solid #EBEBEB;
+    }
+
+    #welfare #layout_3 ._contents ._table_list td {
+        font-size: 1.15rem;
+        color: #333333;
+    }
+
+    #welfare #layout_3 ._contents ._table_list td:nth-child(1) {
+        font-size: 1.3rem;
+    }
+
+    #welfare ._slider_list {
+        float: left;
+        width: 100%;
+        padding: 0 5rem;
+    }
+
+    #welfare ._slider_list .slick-arrow {
+        display: block;
+        z-index: 200;
+        width: 76px;
+        height: 74px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    #welfare ._slider_list .slick-prev {
+        left: -5rem;
+        background-image: url(../img/welfare/icon_rolling_left_bl.png);
+    }
+
+    #welfare ._slider_list .slick-next {
+        right: -5rem;
+        background-image: url(../img/welfare/icon_rolling_right_bl.png);
+    }
+
+    #welfare ._slider_list .slick-prev::before {
+        display: none;
+    }
+
+    #welfare ._slider_list .slick-next::before {
+        display: none;
+    }
+
+    #welfare ._slider_item {
+        padding: 0 1rem;
+    }
+
+    #welfare ._slider_item img {
+        width: 43.875rem;
+        height: 28.5rem;
+        margin: auto;
+    }
+
+    /* footer */
+    footer {
+        position: relative;
+        width: 100%;
+        padding: 4rem 1.4rem;
+        background: #EEEEEE;
+        text-align: center;
+        font-size: 12px;
+        color: #9A9A9A;
+        /* border-top: 1px solid #919191; */
+    }
+
+    footer span.businessNumber,
+    footer span.tel,
+    footer span.email,
+    footer span.copyright.type1 {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+
+    footer span.email {
+        font-size: 0.9rem;
+        color: black;
+    }
+
+    footer ._delimeter {
+        margin: 0 5px;
+    }
+}
+
+/* 15인치 맥북 기준 이하일 경우 */
+@media (max-width: 1680px) {
+    html {
+        font-size: 12px;
+    }
+
+    #home #layout_4 ._slider_list {
+        float: left;
+        width: 100%;
+        height: 40%;
+        padding: 4rem 14rem;
+    }
+}
