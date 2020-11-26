@@ -7,3 +7,4 @@
 | `Library` | jQuery |  |
 
 ### Desc: Homepage layout with SPA structure with pure JavaScript and JQuery
+### 디자인 시안 제외 참여율 100% 개발
