@@ -1,0 +1,93 @@
+/* 메인 스타일*/
+html {
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+}
+
+/* NanumSquare_EB */
+._rending_image ._title,
+._title,
+#intro ._top,
+#intro #layout_3 ._detail,
+#intro #layout_4 ._detail,
+#intro #layout_5 ._detail,
+#intro #layout_5 ._contents ._card ._title,
+#intro #layout_5 ._contents ._card ._detail,
+#welfare ._detail,
+#welfare ._contents ._title {
+    font-family: 'NanumSquare_EB', '나눔고딕', 'NanumGothic';
+}
+
+/* NanumSquare_B */
+._kor,
+#dataService ._subtitle,
+#estateService ._subtitle,
+#welfare #layout_2 ._title,
+#welfare #layout_3 ._title {
+    font-family: 'NanumSquare_B', '나눔고딕', 'NanumGothic';
+}
+
+/* NanumSquare_R */
+._contents ._title {
+    font-family: 'NanumSquare_R', '나눔고딕', 'NanumGothic';
+}
+
+/* NanumSquare_L */
+._eng {
+    font-family: 'NanumSquare_L', '나눔고딕', 'NanumGothic';
+}
+
+/* NotoKr_B */
+._add,
+nav .menu_tit.on,
+#intro ._bottom,
+.emphasis,
+footer span.email {
+    font-family: 'NotoKr_B', 'NotoKr_R', 'sans-serif';
+}
+
+/* NotoKr_R */
+._detail,
+#dataService ._bottom {
+    font-family: 'NotoKr_R', '나눔고딕', 'NanumGothic';
+}
+
+/* NotoKr_L */
+#intro #layout_5 ._contents ._card ._contents,
+#welfare ._contents ._detail,
+#welfare ._table_list td:nth-child(2n) {
+    font-family: 'NotoKr_L', '나눔고딕', 'NanumGothic';
+}
+
+/* SpoqaHanSans_B */
+._contents ._data,
+._button {
+    font-family: 'SpoqaHanSans_B', '나눔고딕', 'NanumGothic';
+}
+
+/* SpoqaHanSans_R */
+._standard_date {
+    font-family: 'SpoqaHanSans_R', '나눔고딕', 'NanumGothic';
+}
+
+._top_down {
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    z-index: 300;
+}
+
+._top_down img {
+    display: block;
+    cursor: pointer;
+}
+
+._top_down img:first-child {
+    margin-bottom: 0.1rem;
+}
