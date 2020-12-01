@@ -654,7 +654,8 @@
 
     /*** layout_5 ***/
     #intro #layout_5 {
-        height: 110vh;
+        height: auto;
+        overflow: hidden;
     }
 
     #intro #layout_5 ._title {
