@@ -791,6 +791,7 @@
         position: relative;
         width: 1025px;
         height: 90vh;
+        overflow: hidden;
         margin: auto;
         padding: 4rem 2rem;
         background: white;

@@ -273,11 +273,20 @@ let intro = {
 	 * @param {*} callback 
 	 */
 	getNews: function (callback) {
+
 		const that = this;
+		const path = '/api/vote/homepageNews?keyword=' + encodeURIComponent('오픈메이트온 "오픈메이트온"&totCnt=50');
+		let url = "http://dev.openmate-on.co.kr:8001"; // 백엔드 호스트네임
+
+		if (location.hostname === "openmate-on.co.kr") {
+			url = 'https://smart-on.co.kr'
+		}
+
+		const realURL = new URL(url + path);
+
 		$.ajax({
 				method: "GET",
-				url: "https://smart-on.co.kr/api/vote/homepageNews?keyword=오픈메이트온+%22오픈메이트온%22&totCnt=50"
-				//url: "http://dev.openmate-on.co.kr:8001/api/vote/homepageNews?keyword=오픈메이트온+%22오픈메이트온%22&totCnt=50"
+				url: realURL
 			})
 			.success(function (data) {
 				that.cards = data['article'];
@@ -403,7 +412,7 @@ let intro = {
 
 		if (!Array.isArray(arr) || arr.length === 0) return;
 
-		arr.sort((a, b) => {
+		arr.sort(function(a, b) {
 			let beforeDate = new Date(a.pubDate.split('/').join('-')).getTime();
 			let afterDate = new Date(b.pubDate.split('/').join('-')).getTime();
 			return afterDate - beforeDate;
